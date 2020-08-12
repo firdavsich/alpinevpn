@@ -1,7 +1,6 @@
 FROM alpine 
 
-RUN apk update && \
-	apk add openvpn iptables socat curl openssl
+RUN apk --no-cache add openvpn iptables socat curl openssl
 
 ADD ./bin /sbin
 
