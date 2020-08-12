@@ -51,6 +51,7 @@ MY_IP_ADDR=$(curl -s http://myip.enix.org/REMOTE_ADDR)
 client
 nobind
 dev tun
+redirect-gateway def1
 
 <key>
 `cat key.pem`
@@ -67,6 +68,10 @@ dev tun
 
 <connection>
 remote $MY_IP_ADDR 1194 udp
+</connection>
+
+<connection>
+remote $MY_IP_ADDR 443 tcp-client
 </connection>
 EOF
 
