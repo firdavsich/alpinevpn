@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/firdavsich/alpinevpn.svg?branch=master)](https://travis-ci.org/firdavsich/alpinevpn)
+
 # OpenVPN for Docker on Alpine
 
 **the original project - [besn0847/alpinevpn](https://github.com/besn0847/alpinevpn)**
